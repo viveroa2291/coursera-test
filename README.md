@@ -1,2 +1,2 @@
 # coursera-test
-Test Coursera Repo
+This is my first Angular.js application
