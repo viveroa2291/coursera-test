@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="adansCalculator"> <!--This is our bound to our app.js-->
 <head>
     <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>body { font-size: 1.3em; }</style>
+    <title>Adan's Calculator</title>
 </head>
-<body>
-    <h1>Hello Coursera Students! I am thrilled about this course.</h1>
+<body ng-app="adansCalculator">
+    <h1>Adan's Calculator</h1>
+    <div ng-controller="adanCalculatorController">
+        <div>
+            Your name:
+            <input type="text" 
+            ng-model="name"
+            ng-keyup="displayNumeric();">
+        </div>
+        <div>Total Numeric value of person's 
+        name is: {{totalValue}} </div>
+    </div>
 </body>
 </html>
